@@ -1,0 +1,43 @@
+.header {
+    background: rgba(0, 0, 0, 0.3); // Серый полупрозрачный фон
+    height: 90px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-bottom: 50px;
+    top: 0;
+    z-index: 10;
+    .menu {
+      display: flex;
+      gap: 54px; // Расстояние между словами
+    }
+  
+    .menuItem {
+      font-family: 'Montserrat';
+      font-size: 33.765px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 35px 0 30px 64px; 
+      
+    }
+    
+    
+    .icons {
+  display: flex;
+  gap: 29px; /* Расстояние между иконками */
+}
+
+.icon1 {
+  margin: 35px 0 27.5px; /* Отступы сверху и снизу */
+}
+
+.icon2 {
+  margin: 27px 64px 28px 0; /* Отступы сверху, справа и снизу */
+}
+
+  }
+
