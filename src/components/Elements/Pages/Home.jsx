@@ -1,7 +1,8 @@
 import React from "react";
+import Button from "../UI/Button";
+import HideText from "../Text/HideText";
 
 import sneakers from '../../../img/elements/img/sneakers.png'
-
 import styles from './Pages.module.scss'
 import '../../../index.scss'
 
@@ -27,13 +28,14 @@ function Home() {
                 <div className={styles.left_wrraper}>
                     <div className={styles.left_wrraper_text}>
                         <p className={styles.white_text_big}>adidas</p>
-                        <p className={styles.red_text_big}>Ozweego</p>
                         <img src={sneakers} alt="Кроссовок" />
+                        <p className={styles.red_text_big}>Ozweego</p>
                     </div>
-                    
+                    <span>New <br /> product!</span>
                 </div>
                 <div className={styles.right_wrraper}>
-                    <h2 className={styles.white_text}>Shock-absorbing Adiprene+ and Adiprene inserts and elastic EVA midsole fill every step with comfort.</h2>
+                    <HideText/>
+                    <Button />
                 </div>
             </div>
         </div>

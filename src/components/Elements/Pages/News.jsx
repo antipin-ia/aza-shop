@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "../Header/Header";
 import styles from './Pages.module.scss'
 
 function News() {
   return (
     <div className={styles.background_grey}>
-       
+
         <div className='background_lines'></div>
           <div className='background_lines background_lines_pos1'></div>
           <div className='background_lines background_lines_pos2'></div>

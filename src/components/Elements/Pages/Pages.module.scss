@@ -22,49 +22,92 @@
   }
 
 .content_list {
-  max-width: 1200px; 
+  width: 100%;
+  max-width: 100vw; 
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
 }
-.left_wrraper{
+.left_wrraper {
   display: flex;
+  width: 100%;
+  max-width: 16vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative; 
 }
 
-.left_wrraper_text{
+.right_wrraper{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  max-width: 40vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 100px;
+}
+.left_wrraper span {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 23.409px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
   position: absolute;
-  height: 50vh;
   left: 5vw;
-  top: 2%;
+  bottom: 5vw;
 }
 
-.left_wrraper img {
-  width: 60vw;
+.left_wrraper_text {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  bottom: 20vh;
+  transform: translateY(-50%);
+  height: 50vh;
+  width: 20vw;
+  left: 20vw;
+  top: 30vh;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10vw;
+}
+
+.left_wrraper_text img {
+  z-index: 2; // поместить изображение на средний слой
+  width: 60vw;
+  pointer-events: none;
 }
 
 .white_text_big {
+  z-index: 1; // поместить текст "adidas" на задний слой
+  position: absolute;
+  top: -5vw;
+  left: -11vw;
   color: #FFF;
-  font-family: Montserrat;
-  font-size: 149.595px;
+  font-family: 'Montserrat';
+  font-size: 9vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase 
 }
 .red_text_big {
+  z-index: 3; // поместить текст "Ozweego" на передний слой
+  position: absolute; // позиционирование относительно контейнера
+  top: 8vw;
+  left: -2vw;
+  transform: translateY(-50%); // выравнивание по центру
   color: #E31F1F;
-  font-family: Montserrat;
-  font-size: 111.271px;
+  font-family: 'Montserrat';
+  font-size: 6vw;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: normal; 
   text-transform: uppercase;
 }
 
