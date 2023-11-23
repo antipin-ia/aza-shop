@@ -42,6 +42,18 @@ h2 {
     text-transform: uppercase;
 }
 
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .background_lines {
     width: 25vw;
     height: 20vw;
