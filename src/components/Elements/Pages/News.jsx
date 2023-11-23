@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Pages.module.scss'
 import { BackLine } from "../Dec_el/BackLine";
 import { SNEAKERS_LIST } from "../Store/STORESHAKES";
+import sneaker from '../../../img/elements/img/sneakers.png';
 
 function News() {
   return (
@@ -55,7 +56,8 @@ function News() {
         </div>
         <div className={styles.right_content}>
           <div className={styles.sneakers_up}>
-                  a
+                <div className={styles.news_circle}></div>
+                <img src={sneaker} alt="" />
           </div>
           <div className={styles.sneakers_down}>
                   a
